@@ -1,35 +1,13 @@
 from customtkinter import *
-from deep_translator import GoogleTranslator , exceptions
+from translator import translate
 import time
 
-def translate():
 
-    lang = entry.get()
-    lang = str(lang)
-    
-    
-    try:
-        file1 = open('translate.txt', 'r')
-        text = file1.read()
-        translate = GoogleTranslator(source = 'auto', target = lang).translate(text)
-    except exceptions.LanguageNotSupportedException:
-        label1.configure(text='Error, language not supported') 
-        time.sleep(3)
-        label1.configure(text='') 
-  
-    except Exception as e:
-        print(f"Error: {e}") 
-    
-    translated = open('translated.txt', 'w')
-    translated.write(translate)
-    translated.close()
-    file1.close()
-    
     
 
 
 def ctkrender():
-    global lang, label1, entry
+    global lang, label1, label2, entry, title
 
     app = CTk()
     app.title('CS2')
