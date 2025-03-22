@@ -16,8 +16,7 @@ def translate():
         label1.configure(text='Error, language not supported') 
         time.sleep(3)
         label1.configure(text='') 
-
-        
+  
     except Exception as e:
         print(f"Error: {e}") 
     
