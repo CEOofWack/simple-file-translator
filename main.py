@@ -7,7 +7,7 @@ from translator import *
 
 
 ctkrender()
-translate()
+
 
 
 
