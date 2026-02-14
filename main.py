@@ -9,7 +9,9 @@ I wanted to try working with multiple files since I wished to learn to write cle
 I am doing my best to learn, and will continue to do so however messy and unprofessional this code may be.
 '''
 
-ctkrender()
+
+if __name__ == "__main__":
+  ctkrender()
 
 
 
